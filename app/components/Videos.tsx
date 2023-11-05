@@ -15,7 +15,7 @@ const Videos = () => {
             </p>
           </div>
           <span className="h-[50px] w-[8px] lg:h-[8px] lg:w-[100px] bg-gray-300 "></span>
-          <span className="h-[15px] w-[25px] lg:h-[25px] lg:w-[15px] bg-gray-300 rounded-t-lg lg:rounded-t-none  lg:rounded-l-lg"></span>
+          <span className="h-[15px] w-[25px] lg:h-[25px] lg:w-[15px] bg-gray-300 rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none"></span>
           <div className="flex shadow-2xl shadow-gray-300 p-2 bg-gray-300">
             <video controls width="800" height="450">
               <source src="/videos/vid1.mp4" type="video/mp4" />
@@ -31,7 +31,7 @@ const Videos = () => {
             </p>
           </div>
           <span className="h-[50px] w-[8px] lg:h-[8px] lg:w-[100px] bg-gray-300 "></span>
-          <span className="h-[15px] w-[25px] lg:h-[25px] lg:w-[15px] bg-gray-300 rounded-t-lg lg:rounded-t-none  lg:rounded-l-lg"></span>
+          <span className="h-[15px] w-[25px] lg:h-[25px] lg:w-[15px] bg-gray-300 rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none"></span>
           <div className="flex shadow-2xl shadow-gray-300 p-2 bg-gray-300">
             <video controls width="800" height="450">
               <source src="/videos/vid2.mp4" type="video/mp4" />
@@ -47,7 +47,7 @@ const Videos = () => {
             </p>
           </div>
           <span className="h-[50px] w-[8px] lg:h-[8px] lg:w-[100px] bg-gray-300 "></span>
-          <span className="h-[15px] w-[25px] lg:h-[25px] lg:w-[15px] bg-gray-300 rounded-t-lg lg:rounded-t-none  lg:rounded-l-lg"></span>
+          <span className="h-[15px] w-[25px] lg:h-[25px] lg:w-[15px] bg-gray-300 rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none"></span>
           <div className="flex shadow-2xl shadow-gray-300 p-2 bg-gray-300">
             <video controls width="800" height="450">
               <source src="/videos/vid3.mp4" type="video/mp4" />

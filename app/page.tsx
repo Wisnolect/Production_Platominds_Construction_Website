@@ -6,6 +6,7 @@ import "keen-slider/keen-slider.min.css";
 import ResidentialIcon from "../public/icons/residential_icon.png";
 import CommercialIcon from "../public/icons/commercial_icon.png";
 import OpenPlotIcon from "../public/icons/open_plots.png";
+import { FadeLoader } from "react-spinners";
 
 const Videos = lazy(() => import("./components/Videos"));
 const ImageSlider = lazy(() => import("./components/ImageSlider"));
@@ -13,10 +14,22 @@ const ImageSlider = lazy(() => import("./components/ImageSlider"));
 export default function Home() {
   return (
     <section className="pt-10">
-      <Suspense fallback={<div className="h-[80vh] w-full flex justify-center items-center animate-pulse">Loading...</div>}>
-      <ImageSlider/>
+      <Suspense
+        fallback={
+          <div className="h-[80vh] w-full flex justify-center items-center animate-pulse">
+            <FadeLoader color="#ff9718" />
+          </div>
+        }
+      >
+        <ImageSlider />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div className="h-[80vh] w-full flex justify-center items-center animate-pulse">
+            <FadeLoader color="#ff9718" />
+          </div>
+        }
+      >
         <Videos />
       </Suspense>
       <div className="w-full flex flex-col items-center gap-10 lg:flex-row lg:justify-around p-6 bg-gray-400">
