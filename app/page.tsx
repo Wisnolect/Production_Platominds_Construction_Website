@@ -7,6 +7,7 @@ import ResidentialIcon from "../public/icons/residential_icon.png";
 import CommercialIcon from "../public/icons/commercial_icon.png";
 import OpenPlotIcon from "../public/icons/open_plots.png";
 import { FadeLoader } from "react-spinners";
+import Chat from "./components/Chat";
 
 const Videos = lazy(() => import("./components/Videos"));
 const ImageSlider = lazy(() => import("./components/ImageSlider"));
@@ -66,6 +67,7 @@ export default function Home() {
           </p>
         </div>
       </div>
+      <Chat/>
     </section>
   );
 }
