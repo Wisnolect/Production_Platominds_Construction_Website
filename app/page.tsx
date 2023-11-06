@@ -1,53 +1,55 @@
 "use client";
 
-import React, { lazy, Suspense } from "react";
-import Image from "next/image";
+import React, { lazy, Suspense, useState, useEffect } from "react";
 import "keen-slider/keen-slider.min.css";
-import ResidentialIcon from "../public/icons/residential_icon.png";
-import CommercialIcon from "../public/icons/commercial_icon.png";
-import OpenPlotIcon from "../public/icons/open_plots.png";
 import { FadeLoader } from "react-spinners";
 import Chat from "./components/Chat";
+import CategoriesSection from "./components/CategoriesSection";
+import ValueSection from "./components/ValueSection";
 
 const Videos = lazy(() => import("./components/Videos"));
 const ImageSlider = lazy(() => import("./components/ImageSlider"));
 
 export default function Home() {
+  const [showSplashScreen, setShowSplashScreen] = useState(true);
+
+  // Use useEffect to hide the splash screen after 2 seconds
+  useEffect(() => {
+    const splashScreenTimer = setTimeout(() => {
+      setShowSplashScreen(false);
+    }, 2000); // 2000 milliseconds (2 seconds)
+
+    return () => {
+      clearTimeout(splashScreenTimer);
+    };
+  }, []);
+
   return (
     <section className="pt-10">
-      <Suspense
-        fallback={
-          <div className="h-[80vh] w-full flex justify-center items-center animate-pulse">
+      {showSplashScreen ? (
+        <div className="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-white z-50">
+          {/* You can customize the splash screen content here */}
+          <div className="animate-pulse">
             <FadeLoader color="#ff9718" />
           </div>
-        }
-      >
-        <ImageSlider />
-      </Suspense>
-      <Suspense
-        fallback={
-          <div className="h-[80vh] w-full flex justify-center items-center animate-pulse">
-            <FadeLoader color="#ff9718" />
-          </div>
-        }
-      >
-        <Videos />
-      </Suspense>
-      <div className="w-full flex flex-col items-center gap-10 lg:flex-row lg:justify-around p-6 bg-gray-400">
-        <div className="w-[180px] h-[180px] flex flex-col justify-center items-center rounded-full bg-orange-600 cursor-pointer hover:animate-none my_shadow_for_icon  hover:bg-orange-400">
-          <Image src={ResidentialIcon} alt="icon" />
-          <p className="text-lg font-bold mt-2">Residential Plots</p>
         </div>
-        <div className="w-[180px] h-[180px] flex flex-col justify-center items-center rounded-full bg-orange-600 cursor-pointer hover:animate-none my_shadow_for_icon hover:bg-orange-400">
-          <Image src={CommercialIcon} alt="icon" />
-          <p className="text-lg font-bold mt-2">Commercial Plots</p>
-        </div>
-        <div className="w-[180px] h-[180px] flex flex-col justify-center items-center rounded-full bg-orange-600 cursor-pointer hover:animate-none my_shadow_for_icon hover:bg-orange-400">
-          <Image src={OpenPlotIcon} alt="icon" />
-          <p className="text-lg font-bold mt-2">Open Land Plots</p>
-        </div>
-      </div>
-      <div className="flex flex-col items-center">
+      ) : (
+        <>
+          <Suspense
+            fallback={
+              <div className="h-[80vh] w-full flex justify-center items-center animate-pulse">
+                <FadeLoader color="#ff9718" />
+              </div>
+            }
+          >
+            <ImageSlider />
+          </Suspense>
+
+          <CategoriesSection />
+          <Videos/>
+          <ValueSection />
+
+          {/* <div className="flex flex-col items-center">
         <h1 className="mt-[5rem] mb-2 text-center capitalize text-4xl font-bold text-orange-600">
           Our Mission
         </h1>
@@ -66,8 +68,10 @@ export default function Home() {
             a time.
           </p>
         </div>
-      </div>
-      <Chat/>
+      </div> */}
+          <Chat />
+        </>
+      )}
     </section>
   );
 }
