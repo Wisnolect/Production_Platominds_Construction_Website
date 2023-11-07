@@ -57,7 +57,7 @@ const Testimonials = () => {
       <h1 className="primaryText mt-3" data-aos="fade-up">
         Know from our customers
       </h1>
-      <div className="flex w-[80vw] mt-4" >
+      <div className="flex w-[80vw] mt-4">
         <Swiper
           spaceBetween={30}
           slidesPerView={slidesPerView}
@@ -71,159 +71,180 @@ const Testimonials = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none " data-aos="zoom-in">
+            <div
+              className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-full p-2 rounded-bl-none "
+              data-aos="zoom-in"
+            >
               <Image
                 src="/profile_icon.jpg"
                 alt=""
                 width={70}
                 height={70}
-                className="rounded-full"
+                className="rounded-full border-2 border-orange-600"
               />
               <h1 className="mt-2 font-bold text-blue-700">Smith Williams</h1>
               <div className="p-3 flex">
                 <div className="-mt-5">
                   <FaRegComments size="1.5em" color="blue" />
                 </div>
-                <p className="text-sm justify-start bg-orange-100 rounded-xl rounded-tl-none p-2">
+                <p className="text-sm justify-start  rounded-xl rounded-tl-none overflow-hidden">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cumque aliquid debitis numquam fugit nostrum similique
-                  doloribus nam incidunt nesciunt at error eum, ab non qu
+                  doloribus nam incidunt
                 </p>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none " data-aos="zoom-in">
+            <div
+              className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-full p-2 rounded-bl-none "
+              data-aos="zoom-in"
+            >
               <Image
                 src="/profile_icon.jpg"
                 alt=""
                 width={70}
                 height={70}
-                className="rounded-full"
+                className="rounded-full border-2 border-orange-600"
               />
               <h1 className="mt-2 font-bold text-blue-700">Smith Williams</h1>
               <div className="p-3 flex">
                 <div className="-mt-5">
                   <FaRegComments size="1.5em" color="blue" />
                 </div>
-                <p className="text-sm justify-start bg-orange-100 rounded-xl rounded-tl-none p-2">
+                <p className="text-sm justify-start  rounded-xl rounded-tl-none overflow-hidden">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cumque aliquid debitis numquam fugit nostrum similique
-                  doloribus nam incidunt nesciunt at error eum, ab non qu
+                  doloribus nam incidunt
                 </p>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none " data-aos="zoom-in">
+            <div
+              className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-full p-2 rounded-bl-none "
+              data-aos="zoom-in"
+            >
               <Image
                 src="/profile_icon.jpg"
                 alt=""
                 width={70}
                 height={70}
-                className="rounded-full"
+                className="rounded-full border-2 border-orange-600"
               />
               <h1 className="mt-2 font-bold text-blue-700">Smith Williams</h1>
               <div className="p-3 flex">
                 <div className="-mt-5">
                   <FaRegComments size="1.5em" color="blue" />
                 </div>
-                <p className="text-sm justify-start bg-orange-100 rounded-xl rounded-tl-none p-2">
+                <p className="text-sm justify-start  rounded-xl rounded-tl-none overflow-hidden">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cumque aliquid debitis numquam fugit nostrum similique
-                  doloribus nam incidunt nesciunt at error eum, ab non qu
+                  doloribus nam incidunt
                 </p>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none " data-aos="zoom-in">
+            <div
+              className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-full p-2 rounded-bl-none "
+              data-aos="zoom-in"
+            >
               <Image
                 src="/profile_icon.jpg"
                 alt=""
                 width={70}
                 height={70}
-                className="rounded-full"
+                className="rounded-full border-2 border-orange-600"
               />
               <h1 className="mt-2 font-bold text-blue-700">Smith Williams</h1>
               <div className="p-3 flex">
                 <div className="-mt-5">
                   <FaRegComments size="1.5em" color="blue" />
                 </div>
-                <p className="text-sm justify-start bg-orange-100 rounded-xl rounded-tl-none p-2">
+                <p className="text-sm justify-start  rounded-xl rounded-tl-none overflow-hidden">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cumque aliquid debitis numquam fugit nostrum similique
-                  doloribus nam incidunt nesciunt at error eum, ab non qu
+                  doloribus nam incidunt
                 </p>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none " data-aos="zoom-in">
+            <div
+              className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-full p-2 rounded-bl-none "
+              data-aos="zoom-in"
+            >
               <Image
                 src="/profile_icon.jpg"
                 alt=""
                 width={70}
                 height={70}
-                className="rounded-full"
+                className="rounded-full border-2 border-orange-600"
               />
               <h1 className="mt-2 font-bold text-blue-700">Smith Williams</h1>
               <div className="p-3 flex">
                 <div className="-mt-5">
                   <FaRegComments size="1.5em" color="blue" />
                 </div>
-                <p className="text-sm justify-start bg-orange-100 rounded-xl rounded-tl-none p-2">
+                <p className="text-sm justify-start  rounded-xl rounded-tl-none overflow-hidden">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cumque aliquid debitis numquam fugit nostrum similique
-                  doloribus nam incidunt nesciunt at error eum, ab non qu
+                  doloribus nam incidunt
                 </p>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none " data-aos="zoom-in">
+            <div
+              className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-full p-2 rounded-bl-none "
+              data-aos="zoom-in"
+            >
               <Image
                 src="/profile_icon.jpg"
                 alt=""
                 width={70}
                 height={70}
-                className="rounded-full"
+                className="rounded-full border-2 border-orange-600"
               />
               <h1 className="mt-2 font-bold text-blue-700">Smith Williams</h1>
               <div className="p-3 flex">
                 <div className="-mt-5">
                   <FaRegComments size="1.5em" color="blue" />
                 </div>
-                <p className="text-sm justify-start bg-orange-100 rounded-xl rounded-tl-none p-2">
+                <p className="text-sm justify-start  rounded-xl rounded-tl-none overflow-hidden">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cumque aliquid debitis numquam fugit nostrum similique
-                  doloribus nam incidunt nesciunt at error eum, ab non qu
+                  doloribus nam incidunt
                 </p>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none " data-aos="zoom-in">
+            <div
+              className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-full p-2 rounded-bl-none "
+              data-aos="zoom-in"
+            >
               <Image
                 src="/profile_icon.jpg"
                 alt=""
                 width={70}
                 height={70}
-                className="rounded-full"
+                className="rounded-full border-2 border-orange-600"
               />
               <h1 className="mt-2 font-bold text-blue-700">Smith Williams</h1>
               <div className="p-3 flex">
                 <div className="-mt-5">
                   <FaRegComments size="1.5em" color="blue" />
                 </div>
-                <p className="text-sm justify-start bg-orange-100 rounded-xl rounded-tl-none p-2">
+                <p className="text-sm justify-start  rounded-xl rounded-tl-none overflow-hidden">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Cumque aliquid debitis numquam fugit nostrum similique
-                  doloribus nam incidunt nesciunt at error eum, ab non qu
+                  doloribus nam incidunt
                 </p>
               </div>
             </div>
-          </SwiperSlide>
+          </SwiperSlide>{" "}
         </Swiper>
       </div>
     </section>
