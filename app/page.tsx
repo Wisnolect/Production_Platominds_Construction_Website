@@ -5,7 +5,8 @@ import "keen-slider/keen-slider.min.css";
 import { FadeLoader } from "react-spinners";
 import Chat from "./components/Chat";
 import CategoriesSection from "./components/CategoriesSection";
-import ValueSection from "./components/ValueSection";
+import ValueSection from "./components/ValueSection.jsx";
+import Testimonials from "./components/Testimonials";
 
 const Videos = lazy(() => import("./components/Videos"));
 const ImageSlider = lazy(() => import("./components/ImageSlider"));
@@ -48,6 +49,7 @@ export default function Home() {
           <CategoriesSection />
           <Videos/>
           <ValueSection />
+          <Testimonials/>
 
           {/* <div className="flex flex-col items-center">
         <h1 className="mt-[5rem] mb-2 text-center capitalize text-4xl font-bold text-orange-600">

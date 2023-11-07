@@ -329,3 +329,45 @@ a {
   width: 100vw;
   background-size: cover;
 }
+
+.slider1_bg {
+  background-image: url("../public/sliderImages/3.jpg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-size: cover;
+}
+
+.slider2_bg {
+  background-image: url("../public/sliderImages/2.jpg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-size: cover;
+}
+
+.slider3_bg {
+  background-image: url("../public/sliderImages/3.jpg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-size: cover;
+}
+
+.slider4_bg {
+  background-image: url("../public/sliderImages/4.jpg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-size: cover;
+}
+
+.slider5_bg {
+  background-image: url("../public/sliderImages/4.jpg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-size: cover;
+}
+
+.slider6_bg {
+  background-image: url("../public/sliderImages/4.jpg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-size: cover;
+}
