@@ -1,6 +1,9 @@
+"use client"
+
+
 import Image from "next/image";
-import React from "react";
-import { FaRegCommentDots, FaRegComments } from "react-icons/fa";
+import React, {useState, useEffect} from "react";
+import {  FaRegComments } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
@@ -9,6 +12,36 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const Testimonials = () => {
+    const [slidesPerView, setSlidesPerView] = useState(getInitialSlidesPerView);
+
+  useEffect(() => {
+    // Function to update slidesPerView based on window width
+    function handleResize() {
+      setSlidesPerView(getInitialSlidesPerView);
+    }
+
+    // Add window resize event listener
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // Function to calculate slidesPerView based on window width
+  function getInitialSlidesPerView() {
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth <= 768) {
+      return 1;
+    } else if (windowWidth <= 1024) {
+      return 2;
+    } else {
+      return 3;
+    }
+  }
+
   return (
     <section className="flex flex-col justify-center items-center mt-10 mb-10">
       <p className="text-orange-600 font-semibold text-lg ">
@@ -18,7 +51,7 @@ const Testimonials = () => {
       <div className="flex w-[80vw] mt-4">
         <Swiper
           spaceBetween={30}
-          slidesPerView={3}
+          slidesPerView={slidesPerView}
           centeredSlides={true}
           autoplay={{
             delay: 2500,

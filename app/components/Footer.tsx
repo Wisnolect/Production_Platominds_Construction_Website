@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="bg-gray-100 h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-5 mt-2">
           <div className="p-2 ">
             <ul>
-              <Image src={img} alt="footer-img" className="h-48 w-48" />
+              <Image src={img} alt="footer-img" className="h-32 w-32 lg:h-48 lg:w-48 mb-2" />
               <div className="flex gap-5 pb-1">
                 <FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
                 <FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
