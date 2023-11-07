@@ -50,11 +50,11 @@ const Testimonials = () => {
     <section className="flex flex-col justify-center items-center mt-10 mb-10">
       <p
         className="text-orange-600 font-semibold text-lg "
-        data-aos="fade-down-right"
+        data-aos="fade-down"
       >
         Varadvinayak's Happy Customers
       </p>
-      <h1 className="primaryText mt-3" data-aos="fade-up-left">
+      <h1 className="primaryText mt-3" data-aos="fade-up">
         Know from our customers
       </h1>
       <div className="flex w-[80vw] mt-4" >

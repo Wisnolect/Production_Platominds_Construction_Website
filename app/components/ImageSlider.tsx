@@ -35,7 +35,7 @@ const ImageSlider = () => {
         className="mySwiper h-[50vh] lg:h-[80vh]"
       >
         <SwiperSlide>
-          <div className="flex justify-start items-start lg:justify-center lg:items-center flex-col h-full slider1_bg" data-aos="zoom-out-up">
+          <div className="flex justify-start items-start lg:justify-center lg:items-center flex-col h-full slider1_bg" data-aos="zoom-out">
             <motion.div
               animate={{ x: 0 }}
               transition={{ type: "spring", stiffness: 100 }}
@@ -55,7 +55,7 @@ const ImageSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex justify-start items-start lg:justify-center lg:items-center flex-col h-full slider2_bg" data-aos="zoom-out-up">
+          <div className="flex justify-start items-start lg:justify-center lg:items-center flex-col h-full slider2_bg" data-aos="zoom-out">
             <motion.div
               animate={{ x: 0 }}
               transition={{ type: "spring", stiffness: 100 }}
@@ -75,7 +75,7 @@ const ImageSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex justify-start items-start lg:justify-center lg:items-center flex-col h-full slider3_bg" data-aos="zoom-out-up">
+          <div className="flex justify-start items-start lg:justify-center lg:items-center flex-col h-full slider3_bg" data-aos="zoom-out">
             <motion.div
               animate={{ x: 0 }}
               transition={{ type: "spring", stiffness: 100 }}
@@ -95,7 +95,7 @@ const ImageSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex justify-start items-start lg:justify-center lg:items-center flex-col h-full slider5_bg" data-aos="zoom-out-up">
+          <div className="flex justify-start items-start lg:justify-center lg:items-center flex-col h-full slider5_bg" data-aos="zoom-out">
             <motion.div
               animate={{ x: 0 }}
               transition={{ type: "spring", stiffness: 100 }}
@@ -115,7 +115,7 @@ const ImageSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex justify-start items-start lg:justify-center lg:items-center flex-col h-full slider6_bg" data-aos="zoom-out-up">
+          <div className="flex justify-start items-start lg:justify-center lg:items-center flex-col h-full slider6_bg" data-aos="zoom-out">
             <motion.div
               animate={{ x: 0 }}
               transition={{ type: "spring", stiffness: 100 }}
@@ -135,7 +135,7 @@ const ImageSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="flex justify-start items-start lg:justify-center lg:items-center flex-col h-full slider4_bg" data-aos="zoom-out-up">
+          <div className="flex justify-start items-start lg:justify-center lg:items-center flex-col h-full slider4_bg" data-aos="zoom-out">
             <motion.div
               animate={{ x: 0 }}
               transition={{ type: "spring", stiffness: 100 }}

@@ -26,19 +26,19 @@ export default function Navbar() {
 
   const navlinks = [
     {
-      label: "Home",
+      labe: "Home",
       link: "/",
     },
     {
-      label: "About",
+      labe: "About",
       link: "/about",
     },
     {
-      label: "Services",
+      labe: "Services",
       link: "/services",
     },
     {
-      label: "Contact",
+      labe: "Contact",
       link: "/contact",
     },
   ];
@@ -93,7 +93,7 @@ export default function Navbar() {
                 className="hidden lg:block text-black text-lg hover:text-orange-500 hover:transform transition duration-300 hover:scale-110"
                 href={d.link}
               >
-                {d.label}
+                {d.labe}
               </Link>
             ))}
             {/* logo */}
@@ -119,7 +119,7 @@ export default function Navbar() {
                 className="font-bold"
                 onClick={() => handleLinkClick(d.link)}
               >
-                {d.label}
+                {d.labe}
               </div>
             ))}
           </section>
