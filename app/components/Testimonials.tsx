@@ -1,18 +1,22 @@
-"use client"
-
+"use client";
 
 import Image from "next/image";
-import React, {useState, useEffect} from "react";
-import {  FaRegComments } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { FaRegComments } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Testimonials = () => {
-    const [slidesPerView, setSlidesPerView] = useState(getInitialSlidesPerView);
+  const [slidesPerView, setSlidesPerView] = useState(getInitialSlidesPerView);
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
 
   useEffect(() => {
     // Function to update slidesPerView based on window width
@@ -44,11 +48,16 @@ const Testimonials = () => {
 
   return (
     <section className="flex flex-col justify-center items-center mt-10 mb-10">
-      <p className="text-orange-600 font-semibold text-lg ">
+      <p
+        className="text-orange-600 font-semibold text-lg "
+        data-aos="fade-down-right"
+      >
         Varadvinayak's Happy Customers
       </p>
-      <h1 className="primaryText mt-3">Know from our customers</h1>
-      <div className="flex w-[80vw] mt-4">
+      <h1 className="primaryText mt-3" data-aos="fade-up-left">
+        Know from our customers
+      </h1>
+      <div className="flex w-[80vw] mt-4" >
         <Swiper
           spaceBetween={30}
           slidesPerView={slidesPerView}
@@ -62,7 +71,7 @@ const Testimonials = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none ">
+            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none " data-aos="zoom-in">
               <Image
                 src="/profile_icon.jpg"
                 alt=""
@@ -84,7 +93,7 @@ const Testimonials = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none ">
+            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none " data-aos="zoom-in">
               <Image
                 src="/profile_icon.jpg"
                 alt=""
@@ -106,7 +115,7 @@ const Testimonials = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none ">
+            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none " data-aos="zoom-in">
               <Image
                 src="/profile_icon.jpg"
                 alt=""
@@ -128,7 +137,7 @@ const Testimonials = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none ">
+            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none " data-aos="zoom-in">
               <Image
                 src="/profile_icon.jpg"
                 alt=""
@@ -150,7 +159,7 @@ const Testimonials = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none ">
+            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none " data-aos="zoom-in">
               <Image
                 src="/profile_icon.jpg"
                 alt=""
@@ -172,7 +181,7 @@ const Testimonials = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none ">
+            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none " data-aos="zoom-in">
               <Image
                 src="/profile_icon.jpg"
                 alt=""
@@ -194,7 +203,7 @@ const Testimonials = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none ">
+            <div className="flex flex-col justify-center items-center w-[300px] h-[280px]  bg-orange-50 rounded-[3rem] p-2 rounded-tl-none " data-aos="zoom-in">
               <Image
                 src="/profile_icon.jpg"
                 alt=""

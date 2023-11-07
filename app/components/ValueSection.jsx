@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   Accordion,
   AccordionItem,
@@ -14,19 +14,25 @@ import {
 } from "react-icons/md";
 import data from "../utils/accordion.jsx";
 import Image from "next/image.js";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 // Demo styles, see 'Styles' section below for some notes on use.
 
 const ValueSection = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+}, []);
+
   return (
     <section id="value" className="v-wrapper mt-10">
       <div className="paddings innerWidth flexCenter v-container">
         {/* left side */}
-        <div className="w-full h-full flex justify-center items-center px-4">
+        <div className="w-full h-full flex justify-center items-center px-4" data-aos="fade-right">
           <img src="/value.jpg" alt="image" className="w-[500px] h-[550px] object-cover border-2 border-gray-600 rounded-t-full" />
         </div>
 
         {/* right */}
-        <div className="flexColStart v-right">
+        <div className="flexColStart v-right" data-aos="fade-left">
           <span className="text-orange-600 font-semibold text-lg">Our Value</span>
 
           <span className="primaryText">Value We Give to You</span>
