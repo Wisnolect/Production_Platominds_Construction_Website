@@ -5,7 +5,7 @@ import Image from "next/image";
 const ContactForm = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
-      <div className="w-full lg:w-40%">
+      <div className="w-full lg:w-40%" data-aos="zoom-in-down">
         <Image
           src={contactSvg}
           width={50}
@@ -15,9 +15,10 @@ const ContactForm = () => {
         />
       </div>
       <form
-        className="w-full lg:w-60% p-6 bg-gray-100 rounded-lg"
+        className="w-full lg:w-60% p-3 bg-gray-100 rounded-lg"
         action="https://formspree.io/f/xoqoblyb"
         method="POST"
+        data-aos="zoom-in-up"
       >
         <div className="mb-4">
           <label htmlFor="name" className="block text-gray-700 font-bold mb-2">

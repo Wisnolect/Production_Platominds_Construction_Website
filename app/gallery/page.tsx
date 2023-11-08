@@ -1,9 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Gallery = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
   const imageNames = [
     "g1.jpg",
     "g2.jpg",
@@ -33,16 +38,20 @@ const Gallery = () => {
   };
 
   return (
-    <section>
-      <h1 className="mt-[5rem] mb-2 text-center capitalize text-4xl font-bold text-orange-600 ">
+    <section className="mt-32">
+      <p className="text-orange-600 font-semibold text-lg text-center" data-aos="fade-up">
         Gallery
+      </p>
+      <hr className="w-[100px] mx-auto shadow-4xl" data-aos="fade-down"/>
+      <h1 className="primaryText mt-3 text-center" data-aos="fade-up">
+      A Visual Tour of Exclusive Real Estate
       </h1>
-      <hr className="lg:w-1/5 w-3/5 md:w-1/5 mx-auto shadow-2xl" />
-      <div className="flex flex-wrap justify-center group mt-6 " >
+      
+      <div className="flex flex-wrap justify-center group mt-6 ">
         {imageNames.map((imageName, index) => (
           <div
             key={index}
-            className="m-2 lg:w-auto flex justify-center lg:hover:scale-150 border-2 lg:hover:z-10"
+            className="m-2 lg:w-auto flex justify-center lg:hover:scale-150 border-2 border-orange-300 lg:hover:z-10"
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
           >
@@ -52,7 +61,9 @@ const Gallery = () => {
               width={300}
               height={300}
               className={` ${
-                hoveredIndex !== -1 && hoveredIndex !== index && "md:filter md:blur-sm "
+                hoveredIndex !== -1 &&
+                hoveredIndex !== index &&
+                "md:filter md:blur-sm "
               }`}
             />
           </div>

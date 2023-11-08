@@ -1,5 +1,4 @@
 import React, { useEffect} from "react";
-import "keen-slider/keen-slider.min.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
 import AOS from "aos";

@@ -34,6 +34,10 @@ export default function Navbar() {
       link: "/about",
     },
     {
+      labe: "Gallery",
+      link: "/gallery",
+    },
+    {
       labe: "Services",
       link: "/services",
     },

@@ -5,6 +5,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import img from "../../public/Navbar/logo.png";
+
 const Footer = () => {
   return (
     <div>
@@ -12,7 +13,11 @@ const Footer = () => {
         <div className="bg-gray-100 h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-5 mt-2">
           <div className="p-2 ">
             <ul>
-              <Image src={img} alt="footer-img" className="h-32 w-32 lg:h-48 lg:w-48 mb-2" />
+              <Image
+                src={img}
+                alt="footer-img"
+                className="h-16 w-24 lg:h-16 lg:w-24 lg:mb-10 mb-5"
+              />
               <div className="flex gap-5 pb-1">
                 <FaInstagram className="text-2xl cursor-pointer hover:text-yellow-600" />
                 <FaTwitter className="text-2xl cursor-pointer hover:text-blue-600" />
@@ -81,7 +86,8 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-center items-center text-center   bg-gray-50">
           <h1 className=" text-gray-800 font-semibold">
-            © 2023-2024 All rights reserved | Build with <span className="text-red-600">❤</span> by{" "}
+            © 2023-2024 All rights reserved | Build with{" "}
+            <span className="text-red-600">❤</span> by{" "}
             <span className="hover:text-orange-500 font-semibold cursor-pointer pb-3">
               Wisnolect
             </span>
